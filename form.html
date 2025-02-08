@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("input").click(function(){
+            $(this).css("background-color","lightblue")
+           });
+           $("input").blur(function(){
+                $(this).css("background-color","white")
+            }); 
+        })
+    </script>
+</head>
+<body>
+    <div class="registration">
+        <h1>SIGN-UP</h1>
+        <form action="#" method="post">
+        <p>Full name:</p>
+        <input class="pass" type="text" name="fullname" placeholder="xxxx-xxxxxx">
+        <p>User name:</p>
+        <input class="pass" type="text" name="username" placeholder="xxxx-xxxxxx">
+        <p>Email:</p>
+        <input class="pass" type="email" name="email" placeholder="xxxxx-@gmail.com">
+        <p>Password:</p>
+        <input class="pass" type="password" name="password" placeholder="✶✶✶✶✶✶✶✶">
+        <p>Gender:</p>
+        <input type="radio" name="gender" id="male">
+        <span id="male">Male</span>
+        <input type="radio" name="gender" id="female">
+        <span id="male">Female</span>
+        <br>
+        <br>
+        <button type="submit" id="sub">submit</button>
+        </form>
+    </div>
+</body>
+</html>

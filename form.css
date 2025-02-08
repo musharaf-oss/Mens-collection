@@ -1,0 +1,48 @@
+body {
+    padding-top: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('homebackground.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+
+.registration{
+    background-color: transparent;
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,);
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 350px;
+    padding-left: 20px;
+    margin-left: 400px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#sub{
+     border: 2px solid black ;
+     border-radius: 20px;
+     width: 150px;
+     height:30px;  
+}
+#sub:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #FFC837;
+    color:rgb(5, 5, 5);
+    
+}
+.pass{
+    border: 2px solid black;
+    border-radius: 10px;
+    height:30px;
+    width: 250px;
+
+}
+.pass:hover { 
+transform: scale(1.05);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+color:rgb(5, 5, 5);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("input").click(function(){
+            $(this).css("background-color","lightblue")
+           });
+           $("input").blur(function(){
+                $(this).css("background-color","white")
+            }); 
+        })
+    </script>
+</head>
+<body>
+    <div class="log">
+        <h1>LOGIN</h1>
+        <form action="#" method="post">
+        <input class="box" type="text" name="username" placeholder="User name                                            👤">
+        <br><br>
+        <input class="box" type="text" name="email" placeholder="Email                                                    📧">
+        <br><br>
+        <input class="box" type="text" name="password" placeholder="Password                                              🔒"><br>
+        <br>
+        <div id="forgetid"><label><input type="checkbox" >remember me</label> 
+         <br>
+    </div>
+    <br>
+        <button type="submit" id="sub">login</button>
+        <p>don't have an account <a href="form.html">SIGN-UP</a></p>
+        </form>
+    </div>
+</body>
+</html>
